@@ -51,6 +51,15 @@ namespace TP3_Grupo_8
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
 
         /// <summary>
+        /// Control cvNoRepetir.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvNoRepetir;
+
+        /// <summary>
         /// Control btnGuardarLocalidad.
         /// </summary>
         /// <remarks>

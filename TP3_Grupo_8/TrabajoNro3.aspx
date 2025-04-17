@@ -103,6 +103,25 @@
         .auto-style31 {
             height: 60px;
         }
+        .auto-style32 {
+            height: 28px;
+            width: 248px;
+        }
+        .auto-style33 {
+            width: 248px;
+        }
+        .auto-style34 {
+            height: 40px;
+            width: 248px;
+        }
+        .auto-style35 {
+            height: 41px;
+            width: 248px;
+        }
+        .auto-style36 {
+            height: 60px;
+            width: 248px;
+        }
     </style>
 </head>
 <body>
@@ -116,7 +135,7 @@
                         <asp:Label ID="Label2" runat="server" Text="Localidades"></asp:Label>
                     </td>
                     <td class="auto-style11"></td>
-                    <td class="auto-style9"></td>
+                    <td class="auto-style32"></td>
                     <td class="auto-style9"></td>
                     <td class="auto-style9"></td>
                     <td class="auto-style9"></td>
@@ -133,7 +152,9 @@
                     <td class="auto-style12">
                         <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad">Ingrese una localidad</asp:RequiredFieldValidator>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">
+                        <asp:CustomValidator ID="cvNoRepetir" runat="server" ControlToValidate="txtLocalidad" ErrorMessage="Esa localidad ya se encuentra en la lista" OnServerValidate="cvNoRepetir_ServerValidate">Esa localidad ya se encuentra en la lista</asp:CustomValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -146,7 +167,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -161,7 +182,7 @@
                         <asp:Button ID="btnGuardarLocalidad" runat="server" OnClick="Button1_Click" Text="Guardar localidad" />
                     </td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -174,7 +195,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -189,7 +210,7 @@
                         <asp:Label ID="Label1" runat="server" Text="Usuarios"></asp:Label>
                     </td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -202,7 +223,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -217,7 +238,7 @@
                         <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style18"></td>
-                    <td class="auto-style19"></td>
+                    <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
@@ -232,7 +253,7 @@
                         <asp:TextBox ID="txtContrasena" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style18"></td>
-                    <td class="auto-style19"></td>
+                    <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
@@ -247,7 +268,7 @@
                         <asp:TextBox ID="txtContrasena2" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style18"></td>
-                    <td class="auto-style19"></td>
+                    <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
@@ -262,7 +283,7 @@
                         <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style18"></td>
-                    <td class="auto-style19"></td>
+                    <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
                     <td class="auto-style19"></td>
@@ -277,7 +298,7 @@
                         <asp:TextBox ID="txtCP" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style25"></td>
-                    <td class="auto-style26"></td>
+                    <td class="auto-style35"></td>
                     <td class="auto-style26"></td>
                     <td class="auto-style26"></td>
                     <td class="auto-style26"></td>
@@ -292,8 +313,8 @@
                         <asp:DropDownList ID="ddlLocalidades" runat="server">
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style30"></td>
-                    <td class="auto-style31"></td>
+                    <td class="auto-style30">&nbsp;</td>
+                    <td class="auto-style36"></td>
                     <td class="auto-style31"></td>
                     <td class="auto-style31"></td>
                     <td class="auto-style31"></td>
@@ -306,7 +327,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -321,7 +342,7 @@
                         <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar usuario" />
                     </td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -334,7 +355,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -349,7 +370,7 @@
                     </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -362,7 +383,7 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

@@ -16,7 +16,28 @@ namespace TP3_Grupo_8
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            if (Page.IsValid)
+            {
+                string nuevaLocalidad = txtLocalidad.Text.Trim();
+                ddlLocalidades.Items.Add(nuevaLocalidad);
+                txtLocalidad.Text = string.Empty;
+            }
+        }
 
+        protected void cvNoRepetir_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+
+            string localidadNueva = txtLocalidad.Text.Trim();
+
+            foreach(ListItem item in ddlLocalidades.Items)
+            {
+                if(item.Text.Equals(localidadNueva, StringComparison.OrdinalIgnoreCase))
+                {
+                    args.IsValid = false;
+                    return;
+                }
+            }
+            args.IsValid = true;    
         }
     }
 }
