@@ -296,7 +296,7 @@
                         <asp:TextBox ID="txtContrasena2" runat="server" ValidationGroup="GrupoGeneral"></asp:TextBox>
                     </td>
                     <td class="auto-style18">
-                        <asp:RequiredFieldValidator ID="rfvRepetirContrasena" runat="server" ControlToValidate="txtContrasena2" ErrorMessage="Ingrese una contraseña" ValidationGroup="GrupoGeneral">*</asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtContrasena" ControlToValidate="txtContrasena2" ErrorMessage="No coincide las contraseñas" ValidationGroup="GrupoGeneral">*</asp:CompareValidator>
                     </td>
                     <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
