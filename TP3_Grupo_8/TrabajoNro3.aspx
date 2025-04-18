@@ -276,7 +276,7 @@
                     <td class="auto-style16"></td>
                     <td class="auto-style17">&nbsp;&nbsp;&nbsp; Contraseña:</td>
                     <td class="auto-style21">
-                        <asp:TextBox ID="txtContrasena" runat="server" ValidationGroup="GrupoGeneral"></asp:TextBox>
+                        <asp:TextBox ID="txtContrasena" runat="server" ValidationGroup="GrupoGeneral" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style18">
                         <asp:RequiredFieldValidator ID="rfvContrasena" runat="server" ControlToValidate="txtContrasena" ErrorMessage="Ingrese una contraseña" ValidationGroup="GrupoGeneral">*</asp:RequiredFieldValidator>
@@ -293,7 +293,7 @@
                     <td class="auto-style16"></td>
                     <td class="auto-style17">&nbsp;&nbsp;&nbsp; Repetir Contraseña:</td>
                     <td class="auto-style21">
-                        <asp:TextBox ID="txtContrasena2" runat="server" ValidationGroup="GrupoGeneral"></asp:TextBox>
+                        <asp:TextBox ID="txtContrasena2" runat="server" ValidationGroup="GrupoGeneral" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style18">
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtContrasena" ControlToValidate="txtContrasena2" ErrorMessage="No coincide las contraseñas" ValidationGroup="GrupoGeneral">*</asp:CompareValidator>
