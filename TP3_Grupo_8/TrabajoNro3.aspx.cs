@@ -23,7 +23,7 @@ namespace TP3_Grupo_8
                 txtLocalidad.Text = string.Empty;
             }
 
-            rfvLocalidades.Enabled = false; // Deshabilitar la validación del campo de localidad después de agregar una nueva localidad
+            rfvLocalidades.Enabled = false;
         }
         
         //Tangamandapio

@@ -35,10 +35,10 @@
         }
         .auto-style11 {
             height: 28px;
-            width: 239px;
+            width: 252px;
         }
         .auto-style12 {
-            width: 239px;
+            width: 252px;
         }
         .auto-style14 {
             width: 56px;
@@ -53,7 +53,7 @@
         }
         .auto-style18 {
             height: 40px;
-            width: 239px;
+            width: 252px;
         }
         .auto-style19 {
             height: 40px;
@@ -78,7 +78,7 @@
         }
         .auto-style25 {
             height: 41px;
-            width: 239px;
+            width: 252px;
         }
         .auto-style26 {
             height: 41px;
@@ -98,7 +98,7 @@
         }
         .auto-style30 {
             height: 60px;
-            width: 239px;
+            width: 252px;
         }
         .auto-style31 {
             height: 60px;
@@ -136,7 +136,7 @@
             height: 130px;
         }
         .auto-style40 {
-            width: 239px;
+            width: 252px;
             height: 130px;
         }
         .auto-style41 {
@@ -313,7 +313,7 @@
                         <asp:TextBox ID="txtCorreo" runat="server" ValidationGroup="GrupoGeneral"></asp:TextBox>
                     </td>
                     <td class="auto-style18">
-                        <asp:RequiredFieldValidator ID="rfvCorreoElectronico" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese un correo electrónico" ValidationGroup="GrupoGeneral">*</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese una direccion de correo valida" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="GrupoGeneral">*</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
