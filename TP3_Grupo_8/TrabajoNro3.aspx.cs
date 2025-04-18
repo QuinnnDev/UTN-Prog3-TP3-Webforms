@@ -23,7 +23,8 @@ namespace TP3_Grupo_8
                 txtLocalidad.Text = string.Empty;
             }
         }
-
+        
+        //Tangamandapio
         protected void cvNoRepetir_ServerValidate(object source, ServerValidateEventArgs args)
         {
 
