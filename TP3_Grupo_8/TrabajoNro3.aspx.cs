@@ -45,7 +45,11 @@ namespace TP3_Grupo_8
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
-
+            if (Page.IsValid)
+            {
+                string nombreUsuario = txtUsuario.Text.Trim();
+                lblBienvenido.Text = "Bienvenido, " + nombreUsuario;
+            }
         }
     }
 }

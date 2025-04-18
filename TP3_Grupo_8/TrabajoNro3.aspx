@@ -422,7 +422,9 @@
                     <td class="auto-style14">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style12">
+                        <asp:Label ID="lblBienvenido" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style33">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
