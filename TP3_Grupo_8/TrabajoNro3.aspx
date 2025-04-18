@@ -313,7 +313,7 @@
                         <asp:TextBox ID="txtCorreo" runat="server" ValidationGroup="GrupoGeneral"></asp:TextBox>
                     </td>
                     <td class="auto-style18">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese una direccion de correo valida" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="GrupoGeneral">*</asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese una direccion de correo valida" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="GrupoGeneral">*</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
