@@ -146,6 +146,30 @@
         .auto-style42 {
             height: 130px;
         }
+        .auto-style43 {
+            width: 56px;
+            height: 49px;
+        }
+        .auto-style44 {
+            width: 186px;
+            height: 49px;
+        }
+        .auto-style45 {
+            width: 157px;
+            font-weight: 700;
+            height: 49px;
+        }
+        .auto-style46 {
+            width: 252px;
+            height: 49px;
+        }
+        .auto-style47 {
+            width: 248px;
+            height: 49px;
+        }
+        .auto-style48 {
+            height: 49px;
+        }
     </style>
 </head>
 <body>
@@ -296,7 +320,9 @@
                         <asp:TextBox ID="txtContrasena2" runat="server" ValidationGroup="GrupoGeneral" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style18">
-                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtContrasena" ControlToValidate="txtContrasena2" ErrorMessage="No coincide las contraseñas" ValidationGroup="GrupoGeneral">*</asp:CompareValidator>
+                        <asp:RequiredFieldValidator ID="rfvContrasena2" runat="server" ControlToValidate="txtContrasena2" ErrorMessage="Debe ingresar la contraseña de nuevo" ValidationGroup="GrupoGeneral">*</asp:RequiredFieldValidator>
+                        <br />
+                        <asp:CompareValidator ID="cvContrasena2" runat="server" ControlToCompare="txtContrasena" ControlToValidate="txtContrasena2" ErrorMessage="No coincide las contraseñas" ValidationGroup="GrupoGeneral">*</asp:CompareValidator>
                     </td>
                     <td class="auto-style34"></td>
                     <td class="auto-style19"></td>
@@ -313,6 +339,8 @@
                         <asp:TextBox ID="txtCorreo" runat="server" ValidationGroup="GrupoGeneral"></asp:TextBox>
                     </td>
                     <td class="auto-style18">
+                        <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Debe ingresar un correo" ValidationGroup="GrupoGeneral">*</asp:RequiredFieldValidator>
+                        <br />
                         <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese una direccion de correo valida" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="GrupoGeneral">*</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style34"></td>
@@ -331,6 +359,8 @@
                     </td>
                     <td class="auto-style25">
                         <asp:RequiredFieldValidator ID="rfvCodigoPostal" runat="server" ControlToValidate="txtCP" ErrorMessage="Ingrese un código postal" ValidationGroup="GrupoGeneral">*</asp:RequiredFieldValidator>
+                        <br />
+                        <asp:RegularExpressionValidator ID="revCP" runat="server" ControlToValidate="txtCP" ErrorMessage="Ingrese un codigo postal valido" ValidationExpression="^\d{4}$" ValidationGroup="GrupoGeneral">*</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style35"></td>
                     <td class="auto-style26"></td>
@@ -374,19 +404,19 @@
                     <td class="auto-style42"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style14">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">
-                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar usuario" ValidationGroup="GrupoGeneral" />
+                    <td class="auto-style43"></td>
+                    <td class="auto-style44"></td>
+                    <td class="auto-style45">
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar usuario" ValidationGroup="GrupoGeneral" OnClick="btnGuardarUsuario_Click" />
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style33">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style46"></td>
+                    <td class="auto-style47"></td>
+                    <td class="auto-style48"></td>
+                    <td class="auto-style48"></td>
+                    <td class="auto-style48"></td>
+                    <td class="auto-style48"></td>
+                    <td class="auto-style48"></td>
+                    <td class="auto-style48"></td>
                 </tr>
                 <tr>
                     <td class="auto-style14">&nbsp;</td>
