@@ -23,7 +23,7 @@ namespace TP3_Grupo_8
                 txtLocalidad.Text = string.Empty;
             }
 
-            rfvLocalidades.Enabled = false;
+            //rfvLocalidades.Enabled = false;
         }
         
         protected void cvNoRepetir_ServerValidate(object source, ServerValidateEventArgs args)
@@ -46,18 +46,18 @@ namespace TP3_Grupo_8
         {
             if (Page.IsValid)
             {
-                if (ddlLocalidades.SelectedItem.Value == "0")
-                {
-                    rfvLocalidades.Enabled = true;
-                }
-                else
-                {
+                //if (ddlLocalidades.SelectedItem.Value == "0")
+                //{
+                //    rfvLocalidades.Enabled = true;
+                //}
+                //else
+                //{
                     string nombreUsuario = txtUsuario.Text.Trim();
                     lblBienvenido.Text = "Bienvenido, " + nombreUsuario;
                     txtUsuario.Text = "";
                     txtCorreo.Text = "";
                     txtCP.Text = "";
-                }    
+                //}    
             }
         }
 
