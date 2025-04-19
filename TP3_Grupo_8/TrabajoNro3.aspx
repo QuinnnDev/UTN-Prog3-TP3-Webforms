@@ -375,10 +375,11 @@
                     <td class="auto-style28">&nbsp;&nbsp;&nbsp; Localidades:</td>
                     <td class="auto-style29">
                         <asp:DropDownList ID="ddlLocalidades" runat="server" ValidationGroup="GrupoGeneral">
+                            <asp:ListItem Value="0">Seleccione una localidad</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style30">
-                        <asp:RequiredFieldValidator ID="rfvLocalidades" runat="server" ControlToValidate="ddlLocalidades" ErrorMessage="Debe seleccionar una localidad" ValidationGroup="GrupoGeneral">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvLocalidades" runat="server" ControlToValidate="ddlLocalidades" ErrorMessage="Debe seleccionar una localidad" ValidationGroup="GrupoGeneral" InitialValue="0" Display="Dynamic">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style36"></td>
                     <td class="auto-style31"></td>

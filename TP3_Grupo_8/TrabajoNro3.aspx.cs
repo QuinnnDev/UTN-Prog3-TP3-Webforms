@@ -26,7 +26,6 @@ namespace TP3_Grupo_8
             rfvLocalidades.Enabled = false;
         }
         
-        //Tangamandapio
         protected void cvNoRepetir_ServerValidate(object source, ServerValidateEventArgs args)
         {
 
@@ -47,8 +46,18 @@ namespace TP3_Grupo_8
         {
             if (Page.IsValid)
             {
-                string nombreUsuario = txtUsuario.Text.Trim();
-                lblBienvenido.Text = "Bienvenido, " + nombreUsuario;
+                if (ddlLocalidades.SelectedItem.Value == "0")
+                {
+                    rfvLocalidades.Enabled = true;
+                }
+                else
+                {
+                    string nombreUsuario = txtUsuario.Text.Trim();
+                    lblBienvenido.Text = "Bienvenido, " + nombreUsuario;
+                    txtUsuario.Text = "";
+                    txtCorreo.Text = "";
+                    txtCP.Text = "";
+                }    
             }
         }
 
